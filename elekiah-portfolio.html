@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Elekiah Anguko - Scientific Research Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: #f8f9fa;
+      color: #202122;
+      line-height: 1.7;
+    }
+
+    a {
+      color: #0645ad;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* ===== TOP BAR ===== */
+    .topbar {
+      background: white;
+      border-bottom: 1px solid #c8ccd1;
+      padding: 12px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .topbar h1 {
+      font-size: 1.3rem;
+      margin: 0;
+      color: #000;
+      font-weight: 500;
+    }
+
+    .topbar nav a {
+      margin-left: 18px;
+      font-size: 0.95rem;
+    }
+
+    /* ===== LAYOUT ===== */
+    .container {
+      max-width: 1300px;
+      margin: auto;
+      padding: 30px;
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      gap: 30px;
+    }
+
+    /* ===== INFOBOX ===== */
+    .infobox {
+      background: white;
+      border: 1px solid #a2a9b1;
+      padding: 15px;
+      height: fit-content;
+      position: sticky;
+      top: 90px;
+    }
+
+    .infobox-title {
+      text-align: center;
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .infobox img {
+      width: 100%;
+      border: 1px solid #c8ccd1;
+      margin-bottom: 15px;
+    }
+
+    .info-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.92rem;
+    }
+
+    .info-table td {
+      padding: 8px;
+      border-bottom: 1px solid #eaecf0;
+      vertical-align: top;
+    }
+
+    .info-table td:first-child {
+      font-weight: bold;
+      width: 40%;
+    }
+
+    /* ===== MAIN CONTENT ===== */
+    .content {
+      background: white;
+      border: 1px solid #c8ccd1;
+      padding: 30px;
+    }
+
+    .page-title {
+      font-size: 2.2rem;
+      border-bottom: 1px solid #a2a9b1;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      font-weight: 400;
+    }
+
+    .subtitle {
+      font-size: 1rem;
+      color: #54595d;
+      margin-bottom: 30px;
+    }
+
+    .section {
+      margin-bottom: 45px;
+    }
+
+    .section h2 {
+      border-bottom: 1px solid #a2a9b1;
+      padding-bottom: 8px;
+      font-size: 1.6rem;
+      font-weight: 400;
+      margin-bottom: 18px;
+    }
+
+    .section p {
+      margin-bottom: 16px;
+      text-align: justify;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 12px;
+    }
+
+    .quote-box {
+      background: #f8f9fa;
+      border-left: 4px solid #36c;
+      padding: 18px;
+      margin: 20px 0;
+      font-style: italic;
+    }
+
+    .publication {
+      margin-bottom: 18px;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 25px;
+      color: #54595d;
+      font-size: 0.9rem;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media(max-width: 900px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+
+      .infobox {
+        position: relative;
+        top: 0;
+      }
+
+      .topbar {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== TOP NAV ===== -->
+  <div class="topbar">
+    <h1>Scientific Research Portfolio</h1>
+
+    <nav>
+      <a href="#biography">Biography</a>
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#collaborations">Collaborations</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+
+  <div class="container">
+
+    <!-- ===== INFOBOX ===== -->
+    <aside class="infobox">
+      <div class="infobox-title"> Elekiah Anguko</div>
+
+      <img src="images/elekiah.jpg" alt=" Elekiah Anguko">
+
+      <table class="info-table">
+        <tr>
+          <td>Citizenship</td>
+          <td>Kenyan</td>
+        </tr>
+
+        <tr>
+          <td>Occupation</td>
+          <td>Research Scientist</td>
+        </tr>
+
+        <tr>
+          <td>Known for</td>
+          <td>
+            Molecular Virology,<br>
+            Genomics,<br>
+            Artificial Intelligence and Deep Learning for Infectious Diseases
+
+          </td>
+        </tr>
+
+        <tr>
+          <td>Education</td>
+          <td>
+            PhD, Cell & Molecular Biology<br>
+            Maseno University
+          </td>
+        </tr>
+
+        <tr>
+          <td>Training</td>
+          <td>
+            Harvard Medical School – Pathogen Genomics for Public Health
+          </td>
+        </tr>
+
+        <tr>
+          <td>Current Role</td>
+          <td>
+            Principal Investigator & Lead,
+            Department of Genomics, Bioinformatics & Computational Biology,
+            KEMRI-CGHR
+          </td>
+        </tr>
+
+        <tr>
+          <td>Leadership</td>
+          <td>
+            CTO & Scientific Director,
+            The GENA Initiative
+          </td>
+        </tr>
+      </table>
+    </aside>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main class="content">
+
+      <h1 class="page-title"> Elekiah Anguko</h1>
+
+      <p class="subtitle">
+        Kenyan Research Scientist specializing in Molecular Virology, Genomics,
+        Bioinformatics, Computational Biology, and Artificial Intelligence for Infectious Disease Research.
+      </p>
+
+      <!-- ===== BIOGRAPHY ===== -->
+      <section class="section" id="biography">
+        <h2>Biography</h2>
+
+        <p>
+          Elekiah Anguko is a Kenyan Research Scientist specializing in Molecular Virology,
+          Genomics, Artificial Intelligence, and Computational Biology. His research focuses on
+          elucidating molecular and genomic temporal patterns of respiratory viruses,
+          zoonotic pathogens, and arboviruses across tropical Africa.
+        </p>
+
+        <p>
+          He has extensive experience in surveillance and genomic evolution studies involving
+          Respiratory Syncytial Virus (RSV), Coronaviruses, and Influenza viruses.
+          He currently leads the Department of Genomics, Bioinformatics,
+          and Computational Biology at KEMRI–CGHR.
+        </p>
+
+        <div class="quote-box">
+          “Building resilient public health systems through genomics,
+          data science, and artificial intelligence.”
+        </div>
+
+        <p>
+          In addition to his scientific leadership, he serves as the Chief Technology Officer
+          and Scientific Director at The GENA Initiative, where he contributes to the development
+          of open-source bioinformatics pipelines, AI-powered analytics,
+          and public health software for infectious disease surveillance.
+        </p>
+      </section>
+
+      <!-- ===== RESEARCH ===== -->
+      <section class="section" id="research">
+        <h2>Research and Scientific Contributions</h2>
+
+        <p>
+           Anguko's work spans molecular virology, genomic epidemiology,
+          computational biology, pathogen surveillance, and epidemic intelligence.
+          His interdisciplinary research integrates artificial intelligence,
+          genomics, and epidemiological analytics to strengthen infectious disease response systems.
+        </p>
+
+        <ul>
+          <li>Respiratory Syncytial Virus (RSV) genomic evolution and surveillance</li>
+          <li>Influenza virus epidemiology and molecular characterization</li>
+          <li>Artificial Intelligence for disease modeling and outbreak prediction</li>
+          <li>Bioinformatics pipeline development for pathogen genomics</li>
+          <li>Deep learning applications in infectious disease analytics</li>
+          <li>Public health innovation and epidemic intelligence systems</li>
+        </ul>
+      </section>
+
+      <!-- ===== COLLABORATIONS ===== -->
+      <section class="section" id="collaborations">
+        <h2>Collaborations</h2>
+
+        <p>
+          Anguko has collaborated with multiple international institutions and organizations
+          in advancing pathogen genomics, artificial intelligence, and infectious disease research.
+        </p>
+
+        <ul>
+          <li><strong>Gates Foundation</strong> – Co-led a Global South-focused MultiFinder framework for AI disease modeling.</li>
+
+          <li><strong>University of Edinburgh</strong> – Research on Respiratory Syncytial Virus genomics and phylogeography.</li>
+
+          <li><strong>Institut Pasteur Dakar</strong> – Studies on respiratory virus genomic evolution across African regions.</li>
+
+          <li><strong>Saw Swee Hock School of Public Health, Singapore</strong> – Artificial Intelligence for infectious disease research.</li>
+
+          <li><strong>LakeHub Foundation</strong> – Training and capacity building in AI, genomics, and deep learning.</li>
+        </ul>
+      </section>
+
+      <!-- ===== PUBLICATIONS ===== -->
+      <section class="section" id="publications">
+        <h2>Selected Publications</h2>
+
+        <div class="publication">
+          <strong>1.</strong>
+          Anguko, E., Nyawanda, B. O., Mbugua, N., et al. (2026).
+          <em>Temporal patterns and disease severity associated with Respiratory Syncytial Virus A and B in Kenyan infants, 2011–2024.</em>
+        </div>
+
+        <div class="publication">
+          <strong>2.</strong>
+          Anguko, E., Opiyo, J., Omondi, D., et al. (2026).
+          <em>Epidemiology, clinical outcomes, and genomic insights of Influenza B lineages among pregnant-postpartum mothers and infants in Kenya, 2015–2025.</em>
+        </div>
+
+        <div class="publication">
+          <strong>3.</strong>
+          Onyango, C.O., Hines, J.Z., Ochieng, M., Anguko, E., et al. (2025).
+          <em>High prevalence of varicella zoster virus infection among persons with suspected mpox cases during an mpox outbreak in Kenya.</em>
+        </div>
+
+        <div class="publication">
+          <strong>4.</strong>
+          Yeda, R., Makalliwa, G., Ouma, C., Anguko, E., et al. (2024).
+          <em>Antimicrobial Susceptibility Profiles of Diarrheagenic Escherichia coli Strains Isolated in Children Below Five Years and Food Animals, Kisumu County, Kenya.</em>
+        </div>
+      </section>
+
+      <!-- ===== CONTACT ===== -->
+      <section class="section" id="contact">
+        <h2>Contact and External Links</h2>
+
+        <p>
+          <strong>Email:</strong> EAnguko@kemri.go.ke
+        </p>
+
+        <p>
+          <strong>Research Interests:</strong>
+          Molecular Virology, Pathogen Genomics,
+          Artificial Intelligence, Deep Learning,
+          Epidemiological Analytics, Bioinformatics.
+        </p>
+
+        <p>
+          <strong>Affiliations:</strong>
+          KEMRI-CGHR,
+          The GENA Initiative,
+          Public Health Research Networks.
+        </p>
+      </section>
+
+    </main>
+  </div>
+
+  <div class="footer">
+    © 2026 Scientific Research Portfolio 
+  </div>
+
+</body>
+</html>
