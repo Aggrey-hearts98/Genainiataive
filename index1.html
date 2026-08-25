@@ -1,0 +1,1006 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aggrey Ongweso - Data Analytics, Research & Software Development Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: #f8f9fa;
+      color: #202122;
+      line-height: 1.7;
+    }
+
+    a {
+      color: #0645ad;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* ===== TOP BAR ===== */
+    .topbar {
+      background: white;
+      border-bottom: 1px solid #c8ccd1;
+      padding: 12px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .topbar h1 {
+      font-size: 1.3rem;
+      margin: 0;
+      color: #000;
+      font-weight: 500;
+    }
+
+    .topbar nav a {
+      margin-left: 18px;
+      font-size: 0.95rem;
+    }
+
+    /* ===== LAYOUT ===== */
+    .container {
+      max-width: 1300px;
+      margin: auto;
+      padding: 30px;
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      gap: 30px;
+    }
+
+    /* ===== INFOBOX ===== */
+    .infobox {
+      background: white;
+      border: 1px solid #a2a9b1;
+      padding: 15px;
+      height: fit-content;
+      position: sticky;
+      top: 90px;
+    }
+
+    .infobox-title {
+      text-align: center;
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .infobox img {
+      width: 100%;
+      border: 1px solid #c8ccd1;
+      margin-bottom: 15px;
+    }
+
+    .info-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.92rem;
+    }
+
+    .info-table td {
+      padding: 8px;
+      border-bottom: 1px solid #eaecf0;
+      vertical-align: top;
+    }
+
+    .info-table td:first-child {
+      font-weight: bold;
+      width: 40%;
+    }
+
+    /* ===== MAIN CONTENT ===== */
+    .content {
+      background: white;
+      border: 1px solid #c8ccd1;
+      padding: 30px;
+    }
+
+    .page-title {
+      font-size: 2.2rem;
+      border-bottom: 1px solid #a2a9b1;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      font-weight: 400;
+    }
+
+    .subtitle {
+      font-size: 1rem;
+      color: #54595d;
+      margin-bottom: 30px;
+    }
+
+    .section {
+      margin-bottom: 45px;
+    }
+
+    .section h2 {
+      border-bottom: 1px solid #a2a9b1;
+      padding-bottom: 8px;
+      font-size: 1.6rem;
+      font-weight: 400;
+      margin-bottom: 18px;
+    }
+
+    .section h3 {
+      font-size: 1.15rem;
+      margin-bottom: 8px;
+      color: #202122;
+    }
+
+    .section p {
+      margin-bottom: 16px;
+      text-align: justify;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 12px;
+    }
+
+    .quote-box {
+      background: #f8f9fa;
+      border-left: 4px solid #36c;
+      padding: 18px;
+      margin: 20px 0;
+      font-style: italic;
+    }
+
+    .publication {
+      margin-bottom: 25px;
+    }
+
+    /* ===== PROJECT CARDS ===== */
+    .project-card {
+      border: 1px solid #c8ccd1;
+      padding: 20px;
+      margin-bottom: 20px;
+      background: #fff;
+    }
+
+    .project-card h3 {
+      margin-top: 0;
+      color: #0645ad;
+    }
+
+    .project-tags {
+      margin-top: 12px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #f1f3f5;
+      border: 1px solid #d8dee4;
+      padding: 4px 9px;
+      margin: 3px;
+      font-size: 0.82rem;
+      border-radius: 3px;
+    }
+
+    /* ===== SKILLS ===== */
+    .skill-category {
+      margin-bottom: 22px;
+    }
+
+    .skill-category strong {
+      display: block;
+      margin-bottom: 7px;
+    }
+
+    /* ===== FOOTER ===== */
+    .footer {
+      text-align: center;
+      padding: 25px;
+      color: #54595d;
+      font-size: 0.9rem;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media(max-width: 900px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+
+      .infobox {
+        position: relative;
+        top: 0;
+      }
+
+      .topbar {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+      }
+
+      .topbar nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .topbar nav a {
+        margin: 5px 8px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ===== TOP NAV ===== -->
+  <div class="topbar">
+    <h1>Portfolio</h1>
+
+    <nav>
+      <a href="#biography">About</a>
+      <a href="#research">Analytics</a>
+      <a href="#software">Software</a>
+      <a href="#projects">Projects</a>
+      <a href="#tools">Tools</a>
+      <a href="#workflow">Workflow</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+
+  <div class="container">
+
+    <!-- ===== INFOBOX ===== -->
+    <aside class="infobox">
+
+      <div class="infobox-title">Aggrey Ongweso</div>
+
+      <img src="images/aggrey.jpg" alt="Aggrey Ongweso">
+
+      <table class="info-table">
+
+        <tr>
+          <td>Profession</td>
+          <td>Data Analyst, Research Data Specialist & Software Developer</td>
+        </tr>
+
+        <tr>
+          <td>Focus</td>
+          <td>
+            Data Analytics, Software Development, Research Data Management,
+            Visualization & Digital Health
+          </td>
+        </tr>
+
+        <tr>
+          <td>Analytics</td>
+          <td>
+            R, Stata, SAS, SPSS, Python, SQL, Excel, Power BI, Tableau
+          </td>
+        </tr>
+
+        <tr>
+          <td>Development</td>
+          <td>
+            Python, FastAPI, React, JavaScript, HTML, CSS, Vite,
+            Tailwind CSS, REST APIs
+          </td>
+        </tr>
+
+        <tr>
+          <td>Databases</td>
+          <td>
+            PostgreSQL, SQL Server, SQL, Database Design
+          </td>
+        </tr>
+
+        <tr>
+          <td>Data Collection</td>
+          <td>
+            ODK, XLSForm, REDCap, KoBoToolbox
+          </td>
+        </tr>
+
+        <tr>
+          <td>Domains</td>
+          <td>
+            Public Health, Epidemiology, Surveillance,
+            Research & Digital Health
+          </td>
+        </tr>
+
+        <tr>
+          <td>Experience</td>
+          <td>
+            KEMRI / CDC research environment
+          </td>
+        </tr>
+
+        <tr>
+          <td>Interests</td>
+          <td>
+            Software Engineering, Data Science, Geospatial Analytics,
+            Dashboards, AI & Health Information Systems
+          </td>
+        </tr>
+
+      </table>
+
+    </aside>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main class="content">
+
+      <h1 class="page-title">Aggrey Ongweso</h1>
+
+      <p class="subtitle">
+        Data Analyst | Software Developer | Research Data Specialist |
+        Statistical Analysis | Public Health Analytics |
+        Data Visualization | Digital Health Technology
+      </p>
+
+      <!-- ===== BIOGRAPHY ===== -->
+      <section class="section" id="biography">
+
+        <h2>About Me</h2>
+
+        <p>
+          I am <strong>Aggrey Ongweso</strong>, a results-oriented
+          data analyst, research data specialist, and software developer
+          working at the intersection of data, public health research,
+          technology, and software engineering.
+        </p>
+
+        <p>
+          My work combines <strong>data analytics and software development</strong>
+          to transform raw data into reliable information, analytical insights,
+          dashboards, digital tools, and practical technology solutions.
+        </p>
+
+        <p>
+          I work across the complete data lifecycle, from electronic data
+          collection and database design to data cleaning, statistical analysis,
+          visualization, application development, API development, and
+          deployment of digital systems.
+        </p>
+
+        <p>
+          On the analytics side, I work with R, Stata, SAS, Python, SQL,
+          Excel, Power BI, and Tableau. On the software development side,
+          I build applications and data-driven systems using Python,
+          FastAPI, React, JavaScript, HTML, CSS, Vite, Tailwind CSS,
+          PostgreSQL, SQL Server, and REST APIs.
+        </p>
+
+        <div class="quote-box">
+          “Building technology and transforming data into clean,
+          reliable, and actionable insights.”
+        </div>
+
+        <p>
+          My portfolio demonstrates practical work in statistical analysis,
+          antimicrobial resistance research, disease surveillance,
+          data visualization, dashboards, electronic data collection,
+          database development, web applications, APIs, and digital
+          health technology.
+        </p>
+
+      </section>
+
+      <!-- ===== ANALYTICS EXPERTISE ===== -->
+      <section class="section" id="research">
+
+        <h2>Data Analytics & Research Expertise</h2>
+
+        <ul>
+
+          <li>
+            <strong>Data Management:</strong>
+            cleaning, validation, restructuring, coding,
+            quality assurance, data integration, and database preparation.
+          </li>
+
+          <li>
+            <strong>Statistical Analysis:</strong>
+            descriptive analysis, prevalence estimation,
+            hypothesis testing, Fisher's exact tests,
+            logistic regression, multivariable analysis,
+            and epidemiological analysis.
+          </li>
+
+          <li>
+            <strong>Research Data:</strong>
+            epidemiological datasets, public health datasets,
+            surveillance data, laboratory data, and longitudinal
+            or repeated observations.
+          </li>
+
+          <li>
+            <strong>Data Visualization:</strong>
+            publication-ready charts, analytical reports,
+            interactive dashboards, KPIs, and data storytelling.
+          </li>
+
+          <li>
+            <strong>Digital Data Collection:</strong>
+            ODK/XLSForm, REDCap, and KoBoToolbox,
+            including form design, deployment, validation,
+            data review, and iterative refinement.
+          </li>
+
+          <li>
+            <strong>Database & Data Engineering:</strong>
+            SQL querying, relational database design,
+            PostgreSQL, SQL Server, data transformation,
+            database preparation, and structured data pipelines.
+          </li>
+
+          <li>
+            <strong>Reproducible Research:</strong>
+            R scripts, Python workflows, R Markdown,
+            structured analytical pipelines, and documented
+            research workflows.
+          </li>
+
+        </ul>
+
+      </section>
+
+      <!-- ===== SOFTWARE DEVELOPMENT ===== -->
+      <section class="section" id="software">
+
+        <h2>Software Development & Digital Health</h2>
+
+        <p>
+          Software development is an important part of my technical
+          work. I develop data-driven applications that connect
+          databases, APIs, analytical workflows, and user interfaces
+          to solve practical research and public health problems.
+        </p>
+
+        <ul>
+
+          <li>
+            <strong>Frontend Development:</strong>
+            HTML5, CSS3, JavaScript, React, Vite,
+            responsive interfaces, component-based development,
+            and Tailwind CSS.
+          </li>
+
+          <li>
+            <strong>Backend Development:</strong>
+            Python, FastAPI, RESTful APIs, application logic,
+            authentication, data validation, and API integration.
+          </li>
+
+          <li>
+            <strong>Database Development:</strong>
+            PostgreSQL, SQL Server, relational database design,
+            SQL queries, database relationships, and data management.
+          </li>
+
+          <li>
+            <strong>Full-Stack Applications:</strong>
+            development of complete applications connecting
+            frontend interfaces, backend services, APIs,
+            authentication systems, and databases.
+          </li>
+
+          <li>
+            <strong>Data-Driven Applications:</strong>
+            development of systems that integrate data collection,
+            analysis, visualization, reporting, and decision support.
+          </li>
+
+          <li>
+            <strong>Health Technology:</strong>
+            development of disease surveillance systems,
+            research data applications, health dashboards,
+            and digital tools for public health workflows.
+          </li>
+
+          <li>
+            <strong>AI & Computational Tools:</strong>
+            development of AI-enabled interfaces and
+            computational workflows for biological and
+            public health data.
+          </li>
+
+        </ul>
+
+      </section>
+
+      <!-- ===== SOFTWARE PROJECTS ===== -->
+<section class="section">
+
+  <h2>Software Development Projects</h2>
+
+  <!-- Project 1 -->
+  <div class="project-card">
+
+    <h3>1. Disease Surveillance System</h3>
+
+    <p>
+      A data-driven disease surveillance application designed
+      to support structured disease reporting, health data
+      management, monitoring, and decision support.
+    </p>
+
+    <p>
+      The system architecture incorporates a React frontend,
+      FastAPI backend, PostgreSQL database, REST APIs,
+      authentication, and structured health data workflows.
+    </p>
+
+    <div class="project-tags">
+      <span class="tag">React</span>
+      <span class="tag">FastAPI</span>
+      <span class="tag">Python</span>
+      <span class="tag">PostgreSQL</span>
+      <span class="tag">REST API</span>
+      <span class="tag">JavaScript</span>
+    </div>
+
+  </div>
+
+
+  <!-- Project 2 -->
+  <div class="project-card">
+
+    <h3>2. PaanGenAI</h3>
+
+    <p>
+      A bioinformatics and AI-oriented software platform designed
+      to provide users with tools for pathogen exploration,
+      AI-assisted questions, sequence comparison, and biological
+      data analysis.
+    </p>
+
+    <p>
+      The application incorporates a modern React interface,
+      Vite-based development environment, reusable components,
+      authentication workflows, file uploads, analytical pages,
+      and an architecture designed to integrate computational
+      and AI-based functionality.
+    </p>
+
+    <div class="project-tags">
+      <span class="tag">React</span>
+      <span class="tag">Vite</span>
+      <span class="tag">JavaScript</span>
+      <span class="tag">Tailwind CSS</span>
+      <span class="tag">AI</span>
+      <span class="tag">Bioinformatics</span>
+    </div>
+
+  </div>
+
+
+  <!-- Project 3 -->
+  <div class="project-card">
+
+    <h3>3. GENA Initiative Platform</h3>
+
+    <p>
+      Designed and developed the GENA Initiative platform, a
+      public-health and bioinformatics-oriented digital platform
+      focused on open-source genomic science, artificial
+      intelligence, data-driven research, and capacity building.
+    </p>
+
+    <p>
+      The platform provides an online presence for the GENA
+      Initiative and presents its mission, research activities,
+      technology focus, team, and initiatives aimed at connecting
+      bioinformatics, AI, genomics, and public health.
+    </p>
+
+    <p>
+      <a href="https://thegenainitiative.org/"
+         target="_blank"
+         rel="noopener noreferrer"
+         class="project-link">
+        Visit the GENA Initiative Platform →
+      </a>
+    </p>
+
+    <div class="project-tags">
+      <span class="tag">HTML</span>
+      <span class="tag">CSS</span>
+      <span class="tag">JavaScript</span>
+      <span class="tag">Web Development</span>
+      <span class="tag">Bioinformatics</span>
+      <span class="tag">AI</span>
+      <span class="tag">Public Health</span>
+    </div>
+
+  </div>
+
+
+  <!-- Project 4 -->
+  <div class="project-card">
+
+    <h3>4. Research Data Collection &amp; Analysis Workflow</h3>
+
+    <p>
+      Developed an iterative workflow connecting electronic
+      data collection with R-based data analysis. Analytical
+      findings were used to identify issues in the data collection
+      instrument, revise the form, redeploy the instrument,
+      and improve subsequent data collection.
+    </p>
+
+    <div class="project-tags">
+      <span class="tag">ODK</span>
+      <span class="tag">XLSForm</span>
+      <span class="tag">R</span>
+      <span class="tag">Data Management</span>
+      <span class="tag">Research Automation</span>
+    </div>
+
+  </div>
+
+</section>
+
+     
+<!-- ===== DATA PROJECTS ===== -->
+<section class="section" id="projects">
+
+  <h2>Selected Data, Research & Surveillance Projects</h2>
+
+  <div class="publication">
+
+    <strong>
+      1. Health and Demographic Surveillance System (HDSS)
+    </strong>
+
+    <p>
+      Worked within a Health and Demographic Surveillance System (HDSS)
+      environment supporting the collection, management, processing,
+      analysis, and reporting of longitudinal population and health data.
+      The work involves handling demographic and health-related information
+      generated through continuous population surveillance.
+    </p>
+
+    <p>
+      Experience includes working with structured surveillance datasets,
+      data quality checks, data cleaning and management, variable creation,
+      data analysis, reporting, and visualization. HDSS data provides an
+      important foundation for understanding population dynamics,
+      mortality, morbidity, migration, births, and other demographic and
+      health indicators over time.
+    </p>
+
+    <div class="project-tags">
+      <span class="tag">HDSS</span>
+      <span class="tag">Health Surveillance</span>
+      <span class="tag">Demographic Data</span>
+      <span class="tag">Longitudinal Data</span>
+      <span class="tag">Data Management</span>
+      <span class="tag">Data Analysis</span>
+      <span class="tag">Public Health</span>
+    </div>
+
+  </div>
+
+
+  <div class="publication">
+
+    <strong>
+      2. Diarrheagenic Escherichia coli & Antimicrobial Resistance
+    </strong>
+
+    <p>
+      Analysed laboratory data on diarrheagenic
+      <em>E. coli</em>, including DEC classification,
+      antimicrobial susceptibility profiles, MDR definition,
+      statistical comparisons, data reshaping,
+      prevalence calculations, and Fisher's exact tests.
+    </p>
+
+    <div class="project-tags">
+      <span class="tag">E. coli</span>
+      <span class="tag">AMR</span>
+      <span class="tag">Laboratory Data</span>
+      <span class="tag">R</span>
+      <span class="tag">Statistics</span>
+    </div>
+
+  </div>
+
+
+  <div class="publication">
+
+    <strong>
+      3. Under-Five Diarrhea Analysis – Siaya County
+    </strong>
+
+    <p>
+      Worked with a HUCS dataset 
+      to investigate diarrhea among children under five.
+      The analysis included variable creation, prevalence
+      estimation, wealth-index construction using PCA,
+      descriptive tables, and logistic regression models.
+    </p>
+
+    <div class="project-tags">
+      <span class="tag">Epidemiology</span>
+      <span class="tag">PCA</span>
+      <span class="tag">Logistic Regression</span>
+      <span class="tag">R</span>
+      <span class="tag">Stata</span>
+    </div>
+
+  </div>
+
+
+  <div class="publication">
+
+    <strong>
+      4. Population-Based Infectious Disease Surveillance
+    </strong>
+
+    <p>
+      Worked with surveillance-oriented datasets and research
+      workflows, including data cleaning, statistical analysis,
+      reporting, visualization, and interpretation for public
+      health research.
+    </p>
+
+    <div class="project-tags">
+      <span class="tag">Disease Surveillance</span>
+      <span class="tag">Public Health</span>
+      <span class="tag">Data Management</span>
+      <span class="tag">Analytics</span>
+    </div>
+
+  </div>
+
+
+  <div class="publication">
+
+    <strong>
+      5. Electronic Data Capture & Iterative Research Workflow
+    </strong>
+
+    <p>
+      Designed and refined electronic data collection workflows
+      using XLSForm and ODK, linking data collection with
+      R-based analysis. Analytical findings were used to identify
+      data-quality issues, improve data collection instruments,
+      redeploy forms, and support subsequent data collection.
+    </p>
+
+    <div class="project-tags">
+      <span class="tag">ODK</span>
+      <span class="tag">XLSForm</span>
+      <span class="tag">R</span>
+      <span class="tag">Data Collection</span>
+      <span class="tag">Data Quality</span>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+      <!-- ===== TECHNICAL TOOLKIT ===== -->
+      <section class="section" id="tools">
+
+        <h2>Technical Toolkit</h2>
+
+        <div class="skill-category">
+          <strong>Statistical & Analytical</strong>
+          R, Stata, SAS, SPSS, Python, pandas, statistical modelling
+        </div>
+
+        <div class="skill-category">
+          <strong>Data & Databases</strong>
+          SQL, PostgreSQL, SQL Server, Excel, database design,
+          data transformation
+        </div>
+
+        <div class="skill-category">
+          <strong>Visualization & Reporting</strong>
+          Power BI, Tableau, ggplot2, Excel charts,
+          R Markdown, analytical reporting
+        </div>
+
+        <div class="skill-category">
+          <strong>Data Collection</strong>
+          ODK Collect, XLSForm, REDCap, KoBoToolbox
+        </div>
+
+        <div class="skill-category">
+          <strong>Frontend Development</strong>
+          HTML5, CSS3, JavaScript, React, Vite,
+          Tailwind CSS, responsive web design
+        </div>
+
+        <div class="skill-category">
+          <strong>Backend Development</strong>
+          Python, FastAPI, REST APIs, API integration,
+          authentication, backend application logic
+        </div>
+
+        <div class="skill-category">
+          <strong>Software & Application Development</strong>
+          Full-stack web applications, data-driven applications,
+          dashboards, health information systems, AI-enabled tools
+        </div>
+
+        <div class="skill-category">
+          <strong>Development Tools</strong>
+          Git, GitHub, Visual Studio Code, virtual environments,
+          package management, API testing
+        </div>
+
+      </section>
+
+      <!-- ===== WORKFLOW ===== -->
+      <section class="section" id="workflow">
+
+        <h2>My Data-to-Technology Workflow</h2>
+
+        <ul>
+
+          <li>
+            <strong>1. Understand:</strong>
+            define the research question, user requirements,
+            variables, outcomes, and system objectives.
+          </li>
+
+          <li>
+            <strong>2. Design:</strong>
+            design data structures, database schemas,
+            collection instruments, application architecture,
+            and user workflows.
+          </li>
+
+          <li>
+            <strong>3. Collect:</strong>
+            develop structured electronic data collection
+            instruments and digital workflows.
+          </li>
+
+          <li>
+            <strong>4. Build:</strong>
+            develop frontend interfaces, backend services,
+            APIs, databases, authentication systems,
+            and application functionality.
+          </li>
+
+          <li>
+            <strong>5. Clean & Validate:</strong>
+            identify missingness, duplicates, inconsistencies,
+            coding issues, validation errors, and data quality problems.
+          </li>
+
+          <li>
+            <strong>6. Analyse:</strong>
+            apply appropriate descriptive and inferential
+            statistical methods.
+          </li>
+
+          <li>
+            <strong>7. Visualize:</strong>
+            communicate findings through tables, figures,
+            dashboards, reports, and interactive applications.
+          </li>
+
+          <li>
+            <strong>8. Improve:</strong>
+            use user feedback, analytical findings,
+            testing, and quality assurance to improve
+            applications and research workflows.
+          </li>
+
+          <li>
+            <strong>9. Communicate:</strong>
+            translate complex data and technical outputs
+            into concise, decision-ready information.
+          </li>
+
+        </ul>
+
+      </section>
+
+      <!-- ===== PROFESSIONAL PROFILE ===== -->
+      <section class="section">
+
+        <h2>What I Bring Together</h2>
+
+        <p>
+          My technical profile combines three complementary areas:
+          <strong>Data Analytics, Software Development, and Public Health Research.</strong>
+        </p>
+
+        <ul>
+
+          <li>
+            <strong>Data:</strong>
+            I transform raw and complex datasets into reliable
+            analytical information.
+          </li>
+
+          <li>
+            <strong>Software:</strong>
+            I build applications, APIs, dashboards, and
+            data-driven systems.
+          </li>
+
+          <li>
+            <strong>Research:</strong>
+            I understand how data is collected, managed,
+            analysed, interpreted, and communicated in
+            research environments.
+          </li>
+
+          <li>
+            <strong>Public Health:</strong>
+            I apply these technical skills to surveillance,
+            epidemiology, laboratory research, and digital health.
+          </li>
+
+        </ul>
+
+        <p>
+          This combination allows me to work across both the
+          <strong>analytical and engineering sides of data-driven projects</strong>:
+          from designing a data collection system and building its
+          database, to developing the application interface,
+          analysing the resulting data, and presenting the findings
+          through dashboards and reports.
+        </p>
+
+      </section>
+
+      <!-- ===== CONTACT ===== -->
+      <section class="section" id="contact">
+
+        <h2>Contact & Portfolio</h2>
+
+        <p>
+          <strong>Email:</strong> aggreyongweso@gmail.com or AOngweso@kemri.go.ke
+        </p>
+
+        <p>
+          <strong>Professional Focus:</strong>
+          Data Analytics, Software Development, Research Data Management,
+          Statistical Analysis, Public Health Informatics,
+          Data Visualization, Digital Health, and Health Technology.
+        </p>
+
+        <p>
+          <strong>Portfolio Interests:</strong>
+          Public health analytics, epidemiological research,
+          disease surveillance, geospatial data, dashboards,
+          reproducible analysis, full-stack software development,
+          AI applications, and digital data systems.
+        </p>
+
+      </section>
+
+    </main>
+
+  </div>
+
+  <div class="footer">
+    © 2026 Aggrey Ongweso — Data Analytics, Research & Software Development Portfolio
+  </div>
+
+</body>
+</html>
+
