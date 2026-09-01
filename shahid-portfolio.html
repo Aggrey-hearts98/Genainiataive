@@ -1,0 +1,1247 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    Shahid Rowles-Khalid - Scientific Research Portfolio
+  </title>
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <style>
+
+    /* =====================================================
+       GLOBAL
+       ===================================================== */
+
+    body {
+
+      margin: 0;
+
+      font-family: 'Roboto', sans-serif;
+
+      background: #f8f9fa;
+
+      color: #202122;
+
+      line-height: 1.7;
+
+    }
+
+
+    a {
+
+      color: #0645ad;
+
+      text-decoration: none;
+
+    }
+
+
+    a:hover {
+
+      text-decoration: underline;
+
+    }
+
+
+    /* =====================================================
+       TOP BAR
+       ===================================================== */
+
+    .topbar {
+
+      background: white;
+
+      border-bottom: 1px solid #c8ccd1;
+
+      padding: 12px 40px;
+
+      display: flex;
+
+      justify-content: space-between;
+
+      align-items: center;
+
+      position: sticky;
+
+      top: 0;
+
+      z-index: 1000;
+
+    }
+
+
+    .topbar h1 {
+
+      font-size: 1.3rem;
+
+      margin: 0;
+
+      color: #000;
+
+      font-weight: 500;
+
+    }
+
+
+    .topbar nav a {
+
+      margin-left: 18px;
+
+      font-size: 0.95rem;
+
+    }
+
+
+    /* =====================================================
+       GENA LINK
+       ===================================================== */
+
+    .gena-link {
+
+      margin-left: 18px;
+
+      padding-left: 18px;
+
+      border-left: 1px solid #c8ccd1;
+
+      font-weight: 500;
+
+    }
+
+
+    /* =====================================================
+       MAIN LAYOUT
+       ===================================================== */
+
+    .container {
+
+      max-width: 1300px;
+
+      margin: auto;
+
+      padding: 30px;
+
+      display: grid;
+
+      grid-template-columns: 320px 1fr;
+
+      gap: 30px;
+
+    }
+
+
+    /* =====================================================
+       INFOBOX
+       ===================================================== */
+
+    .infobox {
+
+      background: white;
+
+      border: 1px solid #a2a9b1;
+
+      padding: 15px;
+
+      height: fit-content;
+
+      position: sticky;
+
+      top: 90px;
+
+    }
+
+
+    .infobox-title {
+
+      text-align: center;
+
+      font-size: 1.3rem;
+
+      font-weight: bold;
+
+      margin-bottom: 15px;
+
+    }
+
+
+    .infobox img {
+
+      width: 100%;
+
+      border: 1px solid #c8ccd1;
+
+      margin-bottom: 15px;
+
+    }
+
+
+    .info-table {
+
+      width: 100%;
+
+      border-collapse: collapse;
+
+      font-size: 0.92rem;
+
+    }
+
+
+    .info-table td {
+
+      padding: 8px;
+
+      border-bottom: 1px solid #eaecf0;
+
+      vertical-align: top;
+
+    }
+
+
+    .info-table td:first-child {
+
+      font-weight: bold;
+
+      width: 40%;
+
+    }
+
+
+    /* =====================================================
+       MAIN CONTENT
+       ===================================================== */
+
+    .content {
+
+      background: white;
+
+      border: 1px solid #c8ccd1;
+
+      padding: 30px;
+
+    }
+
+
+    .page-title {
+
+      font-size: 2.2rem;
+
+      border-bottom: 1px solid #a2a9b1;
+
+      padding-bottom: 10px;
+
+      margin-bottom: 20px;
+
+      font-weight: 400;
+
+    }
+
+
+    .subtitle {
+
+      font-size: 1rem;
+
+      color: #54595d;
+
+      margin-bottom: 30px;
+
+    }
+
+
+    .section {
+
+      margin-bottom: 45px;
+
+    }
+
+
+    .section h2 {
+
+      border-bottom: 1px solid #a2a9b1;
+
+      padding-bottom: 8px;
+
+      font-size: 1.6rem;
+
+      font-weight: 400;
+
+      margin-bottom: 18px;
+
+    }
+
+
+    .section p {
+
+      margin-bottom: 16px;
+
+      text-align: justify;
+
+    }
+
+
+    ul {
+
+      padding-left: 20px;
+
+    }
+
+
+    li {
+
+      margin-bottom: 12px;
+
+    }
+
+
+    /* =====================================================
+       QUOTE
+       ===================================================== */
+
+    .quote-box {
+
+      background: #f8f9fa;
+
+      border-left: 4px solid #36c;
+
+      padding: 18px;
+
+      margin: 20px 0;
+
+      font-style: italic;
+
+    }
+
+
+    /* =====================================================
+       EXPERTISE
+       ===================================================== */
+
+    .expertise-list {
+
+      display: grid;
+
+      grid-template-columns: 1fr 1fr;
+
+      gap: 10px 30px;
+
+    }
+
+
+    .expertise-list li {
+
+      margin-bottom: 8px;
+
+    }
+
+
+    /* =====================================================
+       RESEARCH AREAS
+       ===================================================== */
+
+    .research-area {
+
+      margin-bottom: 22px;
+
+    }
+
+
+    .research-area strong {
+
+      display: block;
+
+      margin-bottom: 5px;
+
+    }
+
+
+    /* =====================================================
+       GENA BOX
+       ===================================================== */
+
+    .gena-box {
+
+      background: #f8f9fa;
+
+      border-left: 4px solid #36c;
+
+      padding: 20px;
+
+      margin-top: 20px;
+
+    }
+
+
+    .gena-box h3 {
+
+      margin-top: 0;
+
+      font-weight: 500;
+
+    }
+
+
+    /* =====================================================
+       FOOTER
+       ===================================================== */
+
+    .footer {
+
+      text-align: center;
+
+      padding: 25px;
+
+      color: #54595d;
+
+      font-size: 0.9rem;
+
+    }
+
+
+    /* =====================================================
+       RESPONSIVE
+       ===================================================== */
+
+    @media(max-width: 900px) {
+
+      .container {
+
+        grid-template-columns: 1fr;
+
+      }
+
+
+      .infobox {
+
+        position: relative;
+
+        top: 0;
+
+      }
+
+
+      .topbar {
+
+        flex-direction: column;
+
+        gap: 10px;
+
+      }
+
+
+      .topbar nav {
+
+        text-align: center;
+
+      }
+
+
+      .topbar nav a {
+
+        display: inline-block;
+
+        margin: 4px 8px;
+
+      }
+
+
+      .gena-link {
+
+        border-left: none;
+
+        padding-left: 0;
+
+      }
+
+    }
+
+
+    @media(max-width: 600px) {
+
+      .topbar {
+
+        padding: 12px 15px;
+
+      }
+
+
+      .container {
+
+        padding: 15px;
+
+      }
+
+
+      .content {
+
+        padding: 20px;
+
+      }
+
+
+      .page-title {
+
+        font-size: 1.8rem;
+
+      }
+
+
+      .section h2 {
+
+        font-size: 1.4rem;
+
+      }
+
+
+      .expertise-list {
+
+        grid-template-columns: 1fr;
+
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+  <!-- =====================================================
+       TOP NAVIGATION
+       ===================================================== -->
+
+  <div class="topbar">
+
+    <h1>
+      Scientific Research Portfolio
+    </h1>
+
+
+    <nav>
+
+      <a href="#biography">
+        Biography
+      </a>
+
+      <a href="#expertise">
+        Expertise
+      </a>
+
+      <a href="#research">
+        Research
+      </a>
+
+      <a href="#genai">
+        GenAI
+      </a>
+
+      <a href="#collaborations">
+        Collaborations
+      </a>
+
+      <a href="#contact">
+        Contact
+      </a>
+
+      <a
+        href="index.html#team"
+        class="gena-link"
+      >
+        ← GENA Our Team
+      </a>
+
+    </nav>
+
+  </div>
+
+
+
+  <!-- =====================================================
+       MAIN CONTAINER
+       ===================================================== -->
+
+  <div class="container">
+
+
+    <!-- ===================================================
+         INFOBOX
+         =================================================== -->
+
+    <aside class="infobox">
+
+      <div class="infobox-title">
+
+        Shahid Rowles-Khalid
+
+      </div>
+
+
+      <img
+        src="images/shahid.jpg"
+        alt="Shahid Rowles-Khalid"
+      >
+
+
+      <table class="info-table">
+
+
+        <tr>
+
+          <td>
+            Nationality
+          </td>
+
+          <td>
+            British
+          </td>
+
+        </tr>
+
+
+        <tr>
+
+          <td>
+            Occupation
+          </td>
+
+          <td>
+            Research Scientist
+          </td>
+
+        </tr>
+
+
+        <tr>
+
+          <td>
+            Specialisation
+          </td>
+
+          <td>
+
+            Computational Virology,<br>
+
+            Genomics,<br>
+
+            Neural Machine Learning,<br>
+
+            Generative AI
+
+          </td>
+
+        </tr>
+
+
+        <tr>
+
+          <td>
+            Research Areas
+          </td>
+
+          <td>
+
+            Virology,<br>
+
+            Genomic Science,<br>
+
+            Artificial Intelligence,<br>
+
+            Global Public Health
+
+          </td>
+
+        </tr>
+
+
+        <tr>
+
+          
+
+        </tr>
+
+
+        <tr>
+
+          <td>
+            Focus
+          </td>
+
+          <td>
+
+            AI, Genomics & Global Health
+
+          </td>
+
+        </tr>
+
+
+      </table>
+
+    </aside>
+
+
+
+    <!-- ===================================================
+         MAIN CONTENT
+         =================================================== -->
+
+    <main class="content">
+
+
+      <!-- PAGE TITLE -->
+
+      <h1 class="page-title">
+
+        Shahid Rowles-Khalid
+
+      </h1>
+
+
+      <p class="subtitle">
+
+        British Research Scientist specializing in
+        Computational Virology, Genomic Science,
+        Neural Machine Learning, Generative AI,
+        and Global Public Health.
+
+      </p>
+
+
+
+      <!-- =================================================
+           BIOGRAPHY
+           ================================================= -->
+
+      <section
+        class="section"
+        id="biography"
+      >
+
+        <h2>
+          Biography
+        </h2>
+
+
+        <p>
+
+          Shahid Rowles-Khalid is a British Research Scientist
+          specialising in Virology, Genomics, Artificial
+          Intelligence, and Global Public Health.
+
+        </p>
+
+
+        <p>
+
+          His interdisciplinary profile combines computational
+          virology and genomic science with neural machine
+          learning and generative artificial intelligence.
+          This combination supports the exploration of
+          computational approaches to biological and
+          public-health challenges.
+
+        </p>
+
+
+        <p>
+
+          Shahid's work reflects the growing convergence
+          between biological sciences and artificial
+          intelligence, with an interest in using advanced
+          computational methods to generate scientific
+          insights and support global health research.
+
+        </p>
+
+
+        <div class="quote-box">
+
+          "Bridging computational science, genomics,
+          artificial intelligence, and global public health
+          to advance scientific discovery."
+
+        </div>
+
+
+        <p>
+
+          His scientific interests also extend to the
+          intersection of global public health and
+          international health initiatives, including work
+          connected to the broader global health ecosystem
+          and the United Nations.
+
+        </p>
+
+      </section>
+
+
+
+      <!-- =================================================
+           EXPERTISE
+           ================================================= -->
+
+      <section
+        class="section"
+        id="expertise"
+      >
+
+        <h2>
+          Areas of Expertise
+        </h2>
+
+
+        <p>
+
+          Shahid's expertise spans several interconnected
+          scientific and technological disciplines:
+
+        </p>
+
+
+        <ul class="expertise-list">
+
+          <li>
+            Computational Virology
+          </li>
+
+          <li>
+            Genomic Science
+          </li>
+
+          <li>
+            Artificial Intelligence
+          </li>
+
+          <li>
+            Neural Machine Learning
+          </li>
+
+          <li>
+            Generative AI Engineering
+          </li>
+
+          <li>
+            Computational Biology
+          </li>
+
+          <li>
+            Global Public Health
+          </li>
+
+          <li>
+            Scientific Computing
+          </li>
+
+        </ul>
+
+      </section>
+
+
+
+      <!-- =================================================
+           RESEARCH
+           ================================================= -->
+
+      <section
+        class="section"
+        id="research"
+      >
+
+        <h2>
+          Research and Scientific Contributions
+        </h2>
+
+
+        <p>
+
+          Shahid's research interests sit at the
+          intersection of computational biology,
+          pathogen science, artificial intelligence,
+          and global public health.
+
+        </p>
+
+
+        <div class="research-area">
+
+          <strong>
+            Computational Virology
+          </strong>
+
+          <p>
+
+            Applying computational approaches to the study
+            of viruses and biological systems, with an
+            emphasis on using computational methods to
+            support virological research.
+
+          </p>
+
+        </div>
+
+
+        <div class="research-area">
+
+          <strong>
+            Genomics
+          </strong>
+
+          <p>
+
+            Exploring genomic information and computational
+            approaches for understanding biological
+            variation, pathogen-related questions,
+            and genomic science.
+
+          </p>
+
+        </div>
+
+
+        <div class="research-area">
+
+          <strong>
+            Artificial Intelligence for Science
+          </strong>
+
+          <p>
+
+            Investigating how artificial intelligence and
+            machine learning can be integrated into
+            scientific research and biological data
+            analysis.
+
+          </p>
+
+        </div>
+
+
+        <div class="research-area">
+
+          <strong>
+            Neural Machine Learning
+          </strong>
+
+          <p>
+
+            Applying neural machine learning approaches
+            to complex scientific and biological problems,
+            with an interest in developing computational
+            methods that can support research and discovery.
+
+          </p>
+
+        </div>
+
+
+        <div class="research-area">
+
+          <strong>
+            Global Public Health
+          </strong>
+
+          <p>
+
+            Connecting computational science, genomics,
+            and artificial intelligence with global
+            public-health priorities and international
+            health challenges.
+
+          </p>
+
+        </div>
+
+
+      </section>
+
+
+
+      <!-- =================================================
+           GENAI
+           ================================================= -->
+
+      <section
+        class="section"
+        id="genai"
+      >
+
+        <h2>
+          Generative AI and Scientific Computing
+        </h2>
+
+
+        <p>
+
+          Shahid's work as a Generative AI Engineer
+          explores the application of modern artificial
+          intelligence approaches to scientific and
+          computational problems.
+
+        </p>
+
+
+        <p>
+
+          Generative AI has the potential to support
+          scientific workflows through intelligent
+          information processing, computational assistance,
+          knowledge synthesis, and interaction with
+          complex scientific information.
+
+        </p>
+
+
+        <ul>
+
+          <li>
+            Generative AI engineering
+          </li>
+
+          <li>
+            Neural machine learning
+          </li>
+
+          <li>
+            AI-assisted scientific research
+          </li>
+
+          <li>
+            Computational approaches to biological data
+          </li>
+
+          <li>
+            AI applications in global health
+          </li>
+
+        </ul>
+
+
+        <div class="gena-box">
+
+          <h3>
+            AI + Biology + Public Health
+          </h3>
+
+
+          <p>
+
+            Shahid's interdisciplinary focus contributes
+            to the broader development of computational
+            approaches that connect artificial intelligence
+            with genomics, virology, and global public
+            health.
+
+          </p>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- =================================================
+           COLLABORATIONS
+           ================================================= -->
+
+      <section
+        class="section"
+        id="collaborations"
+      >
+
+        <h2>
+          Collaborations and Global Health
+        </h2>
+
+
+        <p>
+
+          Shahid's scientific interests extend beyond
+          individual disciplines, bringing together
+          computational science, genomics, artificial
+          intelligence, and global public health.
+
+        </p>
+
+
+        <p>
+
+          His profile includes an interest in international
+          collaboration and the application of scientific
+          and technological innovation to global health
+          challenges, including engagement with the broader
+          United Nations ecosystem.
+
+        </p>
+
+
+        <ul>
+
+          <li>
+            Global public health research
+          </li>
+
+          <li>
+            International scientific collaboration
+          </li>
+
+          <li>
+            Artificial intelligence for health
+          </li>
+
+          <li>
+            Genomics and computational biology
+          </li>
+
+          <li>
+            Global health innovation
+          </li>
+
+        </ul>
+
+      </section>
+
+
+
+      <!-- =================================================
+           GENA INITIATIVE
+           ================================================= -->
+
+      <section
+        class="section"
+        id="gena"
+      >
+
+        <h2>
+          The GENA Initiative
+        </h2>
+
+
+        <p>
+
+          Shahid contributes to The GENA Initiative's
+          broader vision of advancing open-source
+          bioinformatics, artificial intelligence,
+          computational biology, and public health
+          innovation.
+
+        </p>
+
+
+        <p>
+
+          His expertise in computational virology,
+          genomics, neural machine learning, and
+          generative AI complements GENA's focus on
+          developing accessible computational tools
+          and AI-driven approaches for global health.
+
+        </p>
+
+
+        <div class="quote-box">
+
+          The GENA Initiative brings together
+          bioinformatics, artificial intelligence,
+          computational science, and public health to
+          support open and collaborative scientific
+          innovation.
+
+        </div>
+
+      </section>
+
+
+
+      <!-- =================================================
+           CONTACT
+           ================================================= -->
+
+      <section
+        class="section"
+        id="contact"
+      >
+
+        <h2>
+          Contact and External Links
+        </h2>
+
+
+        <p>
+
+          <strong>
+            Email:
+          </strong>
+
+          shahid.25.khalid@gmail.com
+
+        </p>
+
+
+        <p>
+
+          <strong>
+            Professional Focus:
+          </strong>
+
+          Computational Virology, Genomics,
+          Neural Machine Learning, Generative AI,
+          and Global Public Health.
+
+        </p>
+
+
+        
+
+      </section>
+
+
+    </main>
+
+  </div>
+
+
+
+  <!-- =====================================================
+       FOOTER
+       ===================================================== -->
+
+  <div class="footer">
+
+    © 2026 The GENA Initiative |
+    Scientific Research Portfolio |
+    Shahid Rowles-Khalid
+
+  </div>
+
+
+</body>
+
+</html>
+
